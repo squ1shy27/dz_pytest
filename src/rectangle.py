@@ -1,5 +1,6 @@
 import os
 import sys
+
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 PATH_LOG = os.path.dirname(os.path.abspath(ROOT_DIR))
 sys.path.append(PATH_LOG)
@@ -15,7 +16,6 @@ class Rectangle(Figure):
         self.first_side = first_side
         self.second_side = second_side
 
-
     @property
     def get_perimetr(self):
         return (self.first_side + self.second_side) * 2
@@ -23,6 +23,3 @@ class Rectangle(Figure):
     @property
     def get_area(self):
         return self.second_side * self.first_side
-
-
-
